@@ -67,7 +67,7 @@ public class CalculatorTest {
                 .hasMessage("The arguments are incorrect");
 //        Calculator.calculatingDiscount(58, -15);
 
-        // throwing an exception for the discountAmount more than 1000
+        // throwing an exception for the discountAmount more than 100
         assertThatThrownBy(() -> Calculator.calculatingDiscount(58, 150))
                 .isInstanceOf(ArithmeticException.class)
                 .hasMessage("The arguments are incorrect");
